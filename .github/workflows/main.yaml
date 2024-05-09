@@ -32,7 +32,7 @@ jobs:
 
       - name: Execute mts.py script
         env:
-          yettel_webhook: ${{ secrets.MTS_WEBHOOK }}
+          mts_webhook: ${{ secrets.MTS_WEBHOOK }}
         run: |
           python mts.py
           
