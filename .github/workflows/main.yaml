@@ -1,9 +1,6 @@
 name: Scrape
 
 on:
-  ### Svaki dan u 8 uveče
-  schedule:
-    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 jobs:
