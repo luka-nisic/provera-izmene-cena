@@ -3,7 +3,7 @@ name: Scrape
 on:
   ### Svaki dan u 8 uveče
   schedule:
-    - cron: "0 20 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 jobs:
