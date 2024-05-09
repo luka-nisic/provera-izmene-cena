@@ -29,6 +29,12 @@ jobs:
           yettel_webhook: ${{ secrets.YETTEL_WEBHOOK }}
         run: |
           python yettel.py
+
+      - name: Execute mts.py script
+        env:
+          yettel_webhook: ${{ secrets.MTS_WEBHOOK }}
+        run: |
+          python mts.py
           
       - name: Upload changed urls.txt file
         uses: stefanzweifel/git-auto-commit-action@v5
